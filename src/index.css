@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "AeonikPro-Regular";
+  src: url("../src/assets/fonts/AeonikProTRIAL-Regular.otf") format(opentype);
+}
+
+@font-face {
+  font-family: "AeonikPro-Bold";
+  src: url("../src/assets/fonts/AeonikProTRIAL-Bold.otf") format(opentype);
+}
