@@ -18,9 +18,12 @@ export default {
         "hoopla-secondary-red": "#FD5A64"
       },
       fontFamily:{
-        "aeonikPro-regular": ["AeonikPro-Regular", "sans-serif"],
-        "aeonikPro-bold": ["AeonikPro-Bold", "sans-serif"],
+        "aeonikPro-regular": ["AeonikPro-Regular"],
+        "aeonikPro-bold": ["AeonikPro-Bold"],
       },
+      opacity: {
+        '12': '.12',
+      }
     },
   },
   plugins: [],
