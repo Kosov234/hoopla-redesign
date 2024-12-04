@@ -1,6 +1,6 @@
 export const NavigationButtonsDesktop = () => {
   return (
-    <nav className="flex gap-10 items-center font-aeonikPro-regular text-hoopla-black">
+    <nav className="hidden xl:flex gap-10 items-center text-hoopla-black">
       <button className="hover:text-hoopla-electric-blue">Product</button>
       <button className="hover:text-hoopla-electric-blue">Solution</button>
       <button className="hover:text-hoopla-electric-blue">Resources</button>

@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: "AeonikPro-Medium";
+  src: url("../src/assets/fonts/AeonikPro-Medium.otf") format(opentype);
+}
+
+@font-face {
   font-family: "AeonikPro-Bold";
   src: url("../src/assets/fonts/AeonikProTRIAL-Bold.otf") format(opentype);
 }
