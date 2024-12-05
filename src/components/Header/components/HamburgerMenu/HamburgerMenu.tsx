@@ -3,7 +3,7 @@ import { HamburgerMenuNavigation } from "./components/HamburgerMenuNavigation/Ha
 
 export const HamburgerMenu = () => {
   return (
-    <div className="flex flex-col grow justify-between">
+    <div className="xl:hidden flex flex-col grow justify-between">
       <HamburgerMenuNavigation />
       <HamburgerMenuAuthorizationsButtons />
     </div>
