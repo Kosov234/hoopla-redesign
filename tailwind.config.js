@@ -12,6 +12,7 @@ export default {
         "hoopla-deep-blue": "#003282",
         "hoopla-electric-blue": "#2187FF",
         "hoopla-bg-blueish": "#F6F9FE",
+        "hoopla-bg-gray": "#C4C4C41A",
         "hoopla-secondary-violet": "#8C7EF7",
         "hoopla-secondary-orange": "#FA884C",
         "hoopla-secondary-blue": "#78B6FF",
