@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import { menuItems } from "../../../../constants";
-import { HamburgerMenuNavigationItem } from "./components/HamburgerMenuNavigationItem/HamburgerMenuNavigationItem";
+import { HamburgerMenuNavigationItem } from "./components/NavigationItemFirstLevel/NavigationItemFirstLevel";
 
 export const HamburgerMenuNavigation = () => {
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
@@ -12,6 +12,7 @@ export const HamburgerMenuNavigation = () => {
         <HamburgerMenuNavigationItem
           item={item}
           index={index}
+          key={item.title}
           activeMenu={activeMenu}
           setActiveMenu={() =>
             setActiveMenu(activeMenu === item.title ? null : item.title)

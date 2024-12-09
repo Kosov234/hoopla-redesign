@@ -1,16 +1,19 @@
 import { FunctionComponent, SVGProps } from "react";
 
-export type MenuItem = {
+export type FirstLevelMenuItem = {
   title: string;
-  items?: MenuSubItem[];
+  secondLevelItems?: SecondLeveMenuItem[];
+  path?: string;
 };
 
-export type MenuSubItem = {
+export type SecondLeveMenuItem = {
   title: string;
   path: string;
-  icon?: FunctionComponent<SVGProps<SVGSVGElement>>;
-  subItems?: {
-    title: string;
-    path: string;
-  }[];
+  icon: FunctionComponent<SVGProps<SVGSVGElement>>;
+  thirdLevelItems?: ThirdLevelMenuItem[];
+};
+
+export type ThirdLevelMenuItem = {
+  title: string;
+  path: string;
 };

@@ -1,9 +1,9 @@
 import classNames from "classnames";
-import { MenuItem } from "../../../../../../types";
-import { HamburgerMenuNavigationSubitem } from "./components/HamburgerMenuNavigationSubitem/HamburgerMenuNavigationSubitem";
+import { FirstLevelMenuItem } from "../../../../../../types";
+import { NavigationItemSecondLevel } from "./components/NavigationItemSecondLevel/NavigationItemSecondLevel";
 
 type Props = {
-  item: MenuItem;
+  item: FirstLevelMenuItem;
   index: number;
   activeMenu: string | null;
   setActiveMenu: () => void;
@@ -23,7 +23,9 @@ export const HamburgerMenuNavigationItem = ({
         })}
       >
         <button
-          onClick={() => setActiveMenu()}
+          onClick={() => {
+            setActiveMenu();
+          }}
           className="flex items-center justify-between w-full text-left"
         >
           {item.title}
@@ -31,10 +33,13 @@ export const HamburgerMenuNavigationItem = ({
         <i className="bx bx-chevron-down" />
       </div>
 
-      {activeMenu === item.title && item.items && (
+      {activeMenu === item.title && item.secondLevelItems && (
         <div className="flex flex-col gap-2 ">
-          {item.items.map((subItem) => (
-            <HamburgerMenuNavigationSubitem subItem={subItem} />
+          {item.secondLevelItems.map((secondLevelItem) => (
+            <NavigationItemSecondLevel
+              subItem={secondLevelItem}
+              key={secondLevelItem.title}
+            />
           ))}
         </div>
       )}

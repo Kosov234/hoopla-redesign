@@ -1,4 +1,4 @@
-import { MenuItem } from "./types";
+import { FirstLevelMenuItem } from "./types";
 
 import RecognitionIcon from "../../assets/icons/Clap.svg?react";
 import RewardsIcon from "../../assets/icons/Rewards.svg?react";
@@ -8,17 +8,17 @@ import DigitalSignageIcon from "../../assets/icons/DigitalSignage.svg?react";
 import IntegrationsIcon from "../../assets/icons/Integrations.svg?react";
 import SecurityIcon from "../../assets/icons/Security.svg?react";
 
-export const menuItems: MenuItem[] = [
+export const menuItems: FirstLevelMenuItem[] = [
   {
     title: "Product",
-    items: [
+    secondLevelItems: [
       { title: "Recognition", path: "#", icon: RecognitionIcon },
       { title: "Rewards", path: "#", icon: RewardsIcon },
       {
         title: "Gamification",
         path: "#",
         icon: GamificationIcon,
-        subItems: [
+        thirdLevelItems: [
           { title: "Leaderboards", path: "#" },
           { title: "Newsflashes", path: "#" },
           { title: "Contest", path: "#" },
@@ -29,26 +29,36 @@ export const menuItems: MenuItem[] = [
         path: "#",
         icon: PerformanceManagementIcon,
       },
-      { title: "Digital Signage", path: "#", icon: DigitalSignageIcon },
+      {
+        title: "Digital Signage",
+        path: "#",
+        icon: DigitalSignageIcon,
+        thirdLevelItems: [
+          { title: "Hardware", path: "#" },
+          { title: "Content/Apps", path: "#" },
+          { title: "Enterprise Management", path: "#" },
+          { title: "Conference Room Displays", path: "#" },
+        ],
+      },
       { title: "Integrations", path: "#", icon: IntegrationsIcon },
       { title: "Security", path: "#", icon: SecurityIcon },
     ],
   },
-  {
-    title: "Solutions",
-    items: [
-      { title: "Recognition", path: "#" },
-      { title: "Rewards", path: "#" },
-      { title: "Gamification", path: "#" },
-      { title: "Leaderboards", path: "#" },
-      { title: "Newsflashes", path: "#" },
-      { title: "Contest", path: "#" },
-      { title: "Performance Management", path: "#" },
-      { title: "Digital Signage", path: "#" },
-      { title: "Integrations", path: "#" },
-      { title: "Security", path: "#" },
-    ],
-  },
+  // {
+  //   title: "Solutions",
+  //   secondLevelItems: [
+  //     { title: "Recognition", path: "#" },
+  //     { title: "Rewards", path: "#" },
+  //     { title: "Gamification", path: "#" },
+  //     { title: "Leaderboards", path: "#" },
+  //     { title: "Newsflashes", path: "#" },
+  //     { title: "Contest", path: "#" },
+  //     { title: "Performance Management", path: "#" },
+  //     { title: "Digital Signage", path: "#" },
+  //     { title: "Integrations", path: "#" },
+  //     { title: "Security", path: "#" },
+  //   ],
+  // },
   { title: "Resources" },
   { title: "Partners" },
   { title: "Landing Page" },
